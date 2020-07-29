@@ -337,6 +337,10 @@ h1 {
 
 /* BLOG/Video section */
 
+.works h4 {
+    color: #898989;
+}
+
 .blog {
     background-color: #f9f9f9;
     padding: 100px 5%;
@@ -555,7 +559,8 @@ footer a {
     }
 
     .h1Flex {
-        margin: 25% 0 15%;
+        margin: 0 0 15%;
+        padding-top: 60%;
     }
 
     .faveMiniFlex {
@@ -590,9 +595,9 @@ footer a {
         font-size: 3rem;
     }
 
-    .h1Flex {
+    /* .h1Flex {
         margin: 25% 0 20%;
-    }
+    } */
 
     .faveMiniFlex {
         width: 100%;
@@ -639,9 +644,9 @@ footer a {
         font-size: 2.5rem;
     }
 
-    .h1Flex {
+    /* .h1Flex {
         margin: 45% 0 30%;
-    }
+    } */
 
     .namePhoneFlex,
     .emailSubjectFlex {
@@ -654,6 +659,10 @@ footer a {
     .subject {
         width: 95%;
     }
+
+    .message {
+        margin: 0 -7% 0 7%;
+    }
 }
 
 @media (max-width: 420px) {
@@ -662,9 +671,16 @@ footer a {
     }
 
     .h1Flex {
-        margin: 65% 0 30%;
+        margin: 0 0 30%;
     }
 }
+
+@media (max-width: 375px) {
+    .h1Flex {
+        padding-top: 110%;
+    }
+}
+
 
 /* photo carousel  */
 
