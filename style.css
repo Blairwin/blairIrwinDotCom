@@ -12,20 +12,80 @@ body {
     font-family: 'Hind', sans-serif;
 }
 
-
-
-/* ***FONTS*** */
-
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Eczar', serif;
-font-family: 'Hind', sans-serif; */
-
+/* HEADER  */
 
 
 .wrapper {
     margin: 0 5%;
     max-width: 1200px;
 }
+
+/* hamburger menu  */
+
+.menuButton,
+.menuButtonBurger {
+    display: none;
+}
+
+.stickyMobile{
+    display: none;
+}
+
+
+.menuButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger {
+    width: 50px;
+    height: 6px;
+    background: #2342cc;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #2342cc;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuButtonBurger::before {
+    transform: translateY(-16px);
+}
+
+.menuButtonBurger::after {
+    transform: translateY(16px);
+}
+
+/* hamburger animation  */
+.menuButton.open .menuButtonBurger {
+    transform: translateY(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+
+.menuButton.open .menuButtonBurger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuButton.open .menuButtonBurger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* header continued  */
 
 header {
     font-family: 'Montserrat', sans-serif;
@@ -88,6 +148,14 @@ header a {
     justify-content: space-between;
     padding: 5% 0;
     max-width: 100%;
+}
+
+.stickyMobile {
+    position: fixed;
+    top: 0;
+    max-width: 100%;
+    display: flex;
+    margin: 10% 0;
 }
 
 .sticky a {
@@ -595,9 +663,15 @@ footer a {
         font-size: 3rem;
     }
 
-    /* .h1Flex {
-        margin: 25% 0 20%;
-    } */
+    .navFlexParent li a,
+    .easterEgg {
+        display: none;
+    }
+
+    .menuButton,
+    .menuButtonBurger {
+        display: block;
+    }
 
     .faveMiniFlex {
         width: 100%;
@@ -606,19 +680,20 @@ footer a {
     .nav {
         position: relative;
     }
-/* 
+
     .hamburger {
         display: block;
         color: #2342cc;
         font-size: 1.5rem;
         border: none;
         background: transparent;
+    }
         /* background: black; */
         /* position: absolute;
         left: 5%;
         top: 5%;
     } */ 
-
+/* 
     .hamburger:hover,
     .hamburger:focus,
     .hamburger:focus-within {
@@ -626,7 +701,7 @@ footer a {
         -webkit-transition: 1s;
         transition: 1s;
         height: auto;
-    }
+    } */
 
     .navFlexParent {
         overflow: hidden;
@@ -788,6 +863,30 @@ footer a {
 
 
 /* css for audio section  */
+
+.custom {
+    cursor: url(./assets/musicNote2.png), auto;
+}
+
+.custom2 {
+    cursor: url(./assets/musicNote.png), auto;
+}
+
+.custom3 {
+    cursor: url(./assets/videoCameraBlack2.png), auto;
+}
+
+.custom4 {
+    cursor: url(./assets/camera2.png), auto;
+}
+
+.custom5 {
+    cursor: url(./assets/masks.png), auto;
+}
+
+.custom6 {
+    cursor: url(./assets/writing.png), auto;
+}
 
 button {
     border-radius: 5px;

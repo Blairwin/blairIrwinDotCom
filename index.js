@@ -4,7 +4,6 @@ window.onscroll = function() {myFunction()};
 
 // Get the navbar
 const navbar = document.getElementById("navWrapper");
-
 // Get the offset position of the navbar
 const sticky = navbar.offsetTop;
 
@@ -16,6 +15,38 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+window.onscroll = function () {
+	myFunctionMobile();
+};
+
+// Get the navbar
+const navbarMobile = document.getElementById("menuButtonBurger");
+// Get the offset position of the navbar
+const stickyMobile = navbarMobile.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunctionMobile() {
+	if (window.pageYOffset >= stickyMobile) {
+		navbarMobile.classList.add("stickyMobile");
+	} else {
+		navbarMobile.classList.remove("stickyMobile");
+	}
+}
+
+// hamburger menu 
+
+const menuButton = document.querySelector('.menuButton');
+let menuOpen = false;
+menuButton.addEventListener('click', () => {
+	if(!menuOpen) {
+		menuButton.classList.add('open');
+		menuOpen = true;
+	} else {
+		menuButton.classList.remove('open');
+		menuOpen = false;
+	}
+});
 
 
 // let slideIndex = 1;
