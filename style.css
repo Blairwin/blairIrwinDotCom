@@ -14,7 +14,6 @@ body {
 
 /* HEADER  */
 
-
 .wrapper {
     margin: 0 5%;
     max-width: 1200px;
@@ -22,15 +21,14 @@ body {
 
 /* hamburger menu  */
 
-.menuButton,
-.menuButtonBurger {
+nav .menuButton,
+nav .menuButtonBurger {
     display: none;
 }
 
 .stickyMobile{
     display: none;
 }
-
 
 .menuButton {
     position: relative;
@@ -150,13 +148,13 @@ header a {
     max-width: 100%;
 }
 
-.stickyMobile {
+/* .stickyMobile {
     position: fixed;
     top: 0;
     max-width: 100%;
     display: flex;
     margin: 10% 0;
-}
+} */
 
 .sticky a {
     border-bottom: none;
@@ -628,7 +626,7 @@ footer a {
 
     .h1Flex {
         margin: 0 0 15%;
-        padding-top: 60%;
+        padding-top: 40%;
     }
 
     .faveMiniFlex {
@@ -663,14 +661,22 @@ footer a {
         font-size: 3rem;
     }
 
+    .h1Flex {
+        padding-top: 25%;
+    }
+
     .navFlexParent li a,
     .easterEgg {
         display: none;
     }
 
-    .menuButton,
-    .menuButtonBurger {
+    nav .menuButton,
+    nav .menuButtonBurger {
         display: block;
+    }
+
+    nav .menuButton {
+        margin-top: 50px;
     }
 
     .faveMiniFlex {
