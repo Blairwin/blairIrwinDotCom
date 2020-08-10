@@ -1,2 +1,4 @@
 # blairIrwinDotCom
-This is the site for my performance! Along with coding, I do music theatre, which was my first love. It's not entirely done yet (will it ever be?! Always something fun to add...), but I'm quite pleased with the progress so far. :) 
+This is the site for my performance work! 
+Along with coding, I do music theatre, which was my first love.
+I'm constantly thinking of other fun things to add.
