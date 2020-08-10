@@ -9,111 +9,53 @@ const sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-  if (window.pageYOffset >= sticky) {
-	navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+	if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky");
+			} else {
+    			navbar.classList.remove("sticky");
+  				}
 }
 
-window.onscroll = function () {
-	myFunctionMobile();
-};
+// window.onscroll = function () {
+// 	myFunctionMobile();
+// };
 
-// Get the navbar
-const navbarMobile = document.getElementById("menuButtonBurger");
-// Get the offset position of the navbar
-const stickyMobile = navbarMobile.offsetTop;
+// // Get the navbar
+// const navbarMobile = document.getElementById("menuButtonBurger");
+// // Get the offset position of the navbar
+// const stickyMobile = navbarMobile.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunctionMobile() {
-	if (window.pageYOffset >= stickyMobile) {
-		navbarMobile.classList.add("stickyMobile");
-	} else {
-		navbarMobile.classList.remove("stickyMobile");
-	}
-}
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunctionMobile() {
+// 	if (window.pageYOffset >= stickyMobile) {
+// 		navbarMobile.classList.add("stickyMobile");
+// 	} else {
+// 		navbarMobile.classList.remove("stickyMobile");
+// 	}
+// }
 
-// hamburger menu 
+// hamburger menu
 
 const menuButton = document.querySelector('.menuButton');
+let hamNav = document.querySelectorAll('.navFlexParent li a');
 let menuOpen = false;
 menuButton.addEventListener('click', () => {
 	if(!menuOpen) {
 		menuButton.classList.add('open');
 		menuOpen = true;
+		hamNav.forEach(function (navItem) {
+			navItem.style.display = "block";			
+		});
 	} else {
 		menuButton.classList.remove('open');
 		menuOpen = false;
+		hamNav.forEach(function (navItem) {
+			navItem.style.display = "none";
+		});
 	}
 });
 
-
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// Next/previous controls
-// function plusSlides(n) {
-// 	showSlides((slideIndex += n));
-// }
-
-// Thumbnail image controls
-// function currentSlide(n) {
-// 	showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-// 	let i;
-// 	const slides = document.getElementsByClassName("mySlides");
-// 	const dots = document.getElementsByClassName("dot");
-// 	if (n > slides.length) {
-// 		slideIndex = 1;
-// 	}
-// 	if (n < 1) {
-// 		slideIndex = slides.length;
-// 	}
-// 	for (i = 0; i < slides.length; i++) {
-// 		slides[i].style.display = "none";
-// 	}
-// 	for (i = 0; i < dots.length; i++) {
-// 		dots[i].className = dots[i].className.replace(" active", "");
-// 	}
-// 	slides[slideIndex - 1].style.display = "block";
-// 	dots[slideIndex - 1].className += " active";
-// } 
-
-
-
-
-
-// multi carousels 
-
-// let slideIndex = [1,1];
-// // /* Class the members of each slideshow group with different CSS classes */
-// let slideId = ["mySlides1", "mySlides2"]
-// showSlides(1, 0);
-// showSlides(1, 1);
-
-// function plusSlides(n, no) {
-//   showSlides(slideIndex[no] += n, no);
-// }
-
-// function showSlides(n, no) {
-//   let i;
-//   let x = document.getElementsByClassName(slideId[no]);
-//   if (n > x.length) {slideIndex[no] = 1}
-//   if (n < 1) {slideIndex[no] = x.length}
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex[no]-1].style.display = "block";
-// } 
-
-
-// Thumbnail image controls
-// function currentSlide(n) {
-// 	showSlides((slideIndex = n));
-// }
+// Carousel for photos 
 
 let slideIndex = [1, 1, 1, 1, 1, 1];
 let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6"];

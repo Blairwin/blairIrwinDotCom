@@ -26,9 +26,9 @@ nav .menuButtonBurger {
     display: none;
 }
 
-.stickyMobile{
+/* .stickyMobile{
     display: none;
-}
+} */
 
 .menuButton {
     position: relative;
@@ -36,7 +36,7 @@ nav .menuButtonBurger {
     justify-content: center;
     align-items: center;
     width: 80px;
-    height: 80px;
+    /* height: 80px; */
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
@@ -662,7 +662,7 @@ footer a {
     }
 
     .h1Flex {
-        padding-top: 25%;
+        padding-top: 65%;
     }
 
     .navFlexParent li a,
