@@ -19,6 +19,7 @@ function myFunction() {
 // hamburger menu
 
 const menuButton = document.querySelector('.menuButton');
+let wholeNav = document.querySelector("nav");
 let hamNav = document.querySelectorAll('.navFlexParent li a');
 let menuOpen = false;
 menuButton.addEventListener('click', () => {
@@ -27,13 +28,16 @@ menuButton.addEventListener('click', () => {
 		menuOpen = true;
 		hamNav.forEach(function (navItem) {
 			navItem.style.display = "block";
+			navItem.style.color = "white";
 		});
+		wholeNav.style.backgroundColor = "black";
 	} else {
 		menuButton.classList.remove('open');
 		menuOpen = false;
 		hamNav.forEach(function (navItem) {
 			navItem.style.display = "none";
 		});
+		wholeNav.style.backgroundColor = "transparent";
 	}
 });
 
