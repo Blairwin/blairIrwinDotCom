@@ -16,24 +16,6 @@ function myFunction() {
   				}
 }
 
-// window.onscroll = function () {
-// 	myFunctionMobile();
-// };
-
-// // Get the navbar
-// const navbarMobile = document.getElementById("menuButtonBurger");
-// // Get the offset position of the navbar
-// const stickyMobile = navbarMobile.offsetTop;
-
-// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-// function myFunctionMobile() {
-// 	if (window.pageYOffset >= stickyMobile) {
-// 		navbarMobile.classList.add("stickyMobile");
-// 	} else {
-// 		navbarMobile.classList.remove("stickyMobile");
-// 	}
-// }
-
 // hamburger menu
 
 const menuButton = document.querySelector('.menuButton');
@@ -44,7 +26,7 @@ menuButton.addEventListener('click', () => {
 		menuButton.classList.add('open');
 		menuOpen = true;
 		hamNav.forEach(function (navItem) {
-			navItem.style.display = "block";			
+			navItem.style.display = "block";
 		});
 	} else {
 		menuButton.classList.remove('open');

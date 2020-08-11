@@ -12,13 +12,6 @@ body {
     font-family: 'Hind', sans-serif;
 }
 
-/* HEADER  */
-
-.wrapper {
-    margin: 0 5%;
-    max-width: 1200px;
-}
-
 /* hamburger menu  */
 
 nav .menuButton,
@@ -26,17 +19,12 @@ nav .menuButtonBurger {
     display: none;
 }
 
-/* .stickyMobile{
-    display: none;
-} */
-
 .menuButton {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80px;
-    /* height: 80px; */
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
@@ -83,7 +71,12 @@ nav .menuButtonBurger {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-/* header continued  */
+/* HEADER  */
+
+.wrapper {
+    margin: 0 5%;
+    max-width: 1200px;
+}
 
 header {
     font-family: 'Montserrat', sans-serif;
@@ -148,14 +141,6 @@ header a {
     max-width: 100%;
 }
 
-/* .stickyMobile {
-    position: fixed;
-    top: 0;
-    max-width: 100%;
-    display: flex;
-    margin: 10% 0;
-} */
-
 .sticky a {
     border-bottom: none;
     font-size: 1rem;
@@ -219,7 +204,7 @@ h1 {
     border-bottom: gold solid 3px;
 }
 
-.chevron {
+/* .chevron {
     display: flex;
     justify-content: center;
 }
@@ -235,7 +220,7 @@ h1 {
     color: gold;
     -webkit-transition: 1s;
     transition: 1s;
-}
+} */
 
 /* ABOUT ME section */
 
@@ -447,13 +432,11 @@ h1 {
 .blogPhoto img {
     display: block;
     border: white solid 4px;
-    /* opacity: 0.9; */
 }
 
 .blogPhoto img:hover,
 .blogPhoto img:focus {
     border: #2342cc solid 4px;
-    /* opacity: 1; */
     -webkit-transition: 1s;
     transition: 1s;
     transform: rotate(5deg) scale(1.05);
@@ -694,20 +677,6 @@ footer a {
         border: none;
         background: transparent;
     }
-        /* background: black; */
-        /* position: absolute;
-        left: 5%;
-        top: 5%;
-    } */ 
-/* 
-    .hamburger:hover,
-    .hamburger:focus,
-    .hamburger:focus-within {
-        color: gold;
-        -webkit-transition: 1s;
-        transition: 1s;
-        height: auto;
-    } */
 
     .navFlexParent {
         overflow: hidden;
@@ -834,7 +803,7 @@ footer a {
 }
 
 /* The dots/bullets/indicators */
-.dot {
+/* .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -843,7 +812,7 @@ footer a {
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
+} */
 
 .active, .dot:hover {
   background-color: #717171;
