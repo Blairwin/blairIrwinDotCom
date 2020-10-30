@@ -276,3 +276,7 @@ document.querySelector('.quiet').onclick = function () {
 
 // I also want to add something to change the pause button on the image back to play once the track is finished
 
+// recaptcha 
+   function onSubmit(token) {
+     document.getElementById("form").submit();
+   }
